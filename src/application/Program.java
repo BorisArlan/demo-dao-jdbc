@@ -2,6 +2,8 @@ package application;
 
 import java.util.Date;
 
+import model.dao.DaoFactory;
+import model.dao.SellerDao;
 import model.entites.Department;
 import model.entites.Seller;
 
@@ -11,6 +13,7 @@ public class Program {
 		
 		Department obj = new Department(1,"Books");
 		Seller seller  = new Seller(22,"Pedro","pedro@gmail.com",new Date(),5000.0,obj); 
+		SellerDao sellerDao = DaoFactory.creatSellerDao();
 		System.out.println(seller);
 	}
 

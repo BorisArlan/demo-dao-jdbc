@@ -25,12 +25,17 @@ public class Program {
 			System.out.println(obj);
 		}
 		
-		System.out.println("\n=== Teste 2 : Seller fyndByDepartment ===");
+		System.out.println("\n=== Teste 3 : Seller fyndByDepartment ===");
 		sellerDep = sellerDao.findAll();
 		
 		for(Seller obj : sellerDep) {
 			System.out.println(obj);
 		}
+		
+		System.out.println("\n=== Teste 4 : Seller Insert ===");
+		Seller newSeller = new Seller(null,"joao","joao@gmail.com",new Date(),4000.0,dep);
+		sellerDao.insert(newSeller);
+		System.out.println("Inserido "+newSeller.getId());
 		
 	}
 

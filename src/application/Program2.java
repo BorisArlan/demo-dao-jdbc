@@ -31,7 +31,7 @@ public class Program2 {
 		depDao.update(dep);
 		System.out.println("Insert Completed");
 		
-		System.out.println("\n=== Teste 3 : Department FINDALL ===");
+		System.out.println("\n=== Teste 4 : Department FINDALL ===");
 		List<Department> depAll = depDao.findAll();
 		
 		for(Department dp : depAll) {
@@ -39,7 +39,7 @@ public class Program2 {
 			
 		}
 		
-		System.out.println("\n=== Teste 3 : Department DELETE ===");
+		System.out.println("\n=== Teste 5 : Department DELETE ===");
 		System.out.println("Digite ID do item a ser deletado!");
 		int id = sc.nextInt();
 		depDao.deleteById(id);
